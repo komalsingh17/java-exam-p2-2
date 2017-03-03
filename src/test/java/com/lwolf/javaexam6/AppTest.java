@@ -45,4 +45,13 @@ public class AppTest
         List<Integer> resultList = App.rotateList(list, steps);
         assertEquals(expectedList, resultList);
     }
+
+    public void testRotateListOfStrings() {
+        int steps = 2;
+        List<String> list = new ArrayList<String>(Arrays.asList("react", "git", "java", "c#", "docker"));
+        List<String> expectedList = new ArrayList<String>(Arrays.asList("java", "c#", "docker", "react", "git"));
+        List<String> resultList = App.rotateList(list, steps);
+        assertEquals(expectedList, resultList);
+    }
+
 }
