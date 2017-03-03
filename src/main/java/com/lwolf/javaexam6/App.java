@@ -15,6 +15,12 @@ public class App {
         System.out.println(rotatedList);
     }
 
+    /**
+     *
+     * @param list  the list to be rotated
+     * @param k     the number of steps of rotation
+     * @return      reference to the rotated list
+     */
     public static List<Integer> rotateList(List<Integer> list, int k) {
 
         if (k == 0) return list;
